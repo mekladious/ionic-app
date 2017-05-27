@@ -23,53 +23,48 @@
   <ion-navbar color="primary">
     <ion-searchbar placeholder="Search for products, services etc."></ion-searchbar>
   </ion-navbar>
-  
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card >
     <ion-card-header>
       <h6 align=center style= "color: grey">BROWSE BY CATEGORY</h6>
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content align=center>
       <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-buttons center>
-              properties
-            </ion-buttons>
+        <ion-row >
+          <ion-col >
+             <a href="/" style="text-decoration: none; color: grey"> properties</a>
           </ion-col>
           <ion-col>
-            <ion-buttons center>
-              move
-            </ion-buttons>
+            <a href="/" style="text-decoration: none; color: grey">move</a>
           </ion-col>
           <ion-col>
-            <ion-buttons center>
-              pre owned
-            </ion-buttons>
+            <a href="/" style="text-decoration: none; color: grey"> pre owned</a>
           </ion-col>
           <ion-col>
-            <ion-buttons center>
-              classifieds
-            </ion-buttons>
+            <a href="/" style="text-decoration: none; color: grey">classifieds</a>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
+  </ion-card>  
 
-  </ion-card>
-
-  <h6 style= "color: grey"> Featured items </h6>
-  <ion-card>
-    <ion-card-content>
-      <ion-tabs  class="tabs-basic">
-        <ion-tab [root]="tab1Root" tabTitle="Classifieds">tab</ion-tab>
-        <ion-tab [root]="tab2Root" tabTitle="Properties"></ion-tab>
-        <ion-tab [root]="tab4Root" tabTitle="Pre Owned" ></ion-tab>
-      </ion-tabs>
-
-    </ion-card-content>
-  </ion-card>
-  
+    <h6 style= "color: grey"> Featured items </h6>
+    <ion-card>
+      <ion-segment style="width: auto" >
+        <ion-segment-button value="classifieds" style="width:90px;  color:grey">
+        Classifieds
+        </ion-segment-button>
+        <ion-segment-button value="properties" style="width:90px; color:grey">
+        Properties
+        </ion-segment-button>
+        <ion-segment-button value="preowned" style="width:90px; color:grey">
+        Pre Owned
+        </ion-segment-button>
+        <ion-segment-button value="other" style="width:90px; color:grey">
+        Other
+        </ion-segment-button>
+      </ion-segment>
+    </ion-card>
 </ion-content>
