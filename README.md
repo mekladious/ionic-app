@@ -1,5 +1,5 @@
 
-## How to use try out this project
+## How to try out this app
 
 Before using the app you need'll need the latest version of Node.js
 
