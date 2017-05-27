@@ -1,17 +1,31 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-buttons right color="primary"> 
+      <a href="/"><ion-icon ios="ios-notifications-outline" md="md-notifications" style="color:white"></ion-icon></a>
+    </ion-buttons>
+    <p align="center" style="color:white">Mira's first ionic app</p>
+    <ion-buttons left> 
+      <a href="/"><ion-icon ios="ios-settings-outline" md="md-settings" style="color:white"></ion-icon></a>
+    </ion-buttons>
   </ion-navbar>
+  <ion-navbar color="primary">
+    <ion-select placeholder="City" color="primary" align="center"style="margin: 0 auto;">
+      <ion-option>Dubai</ion-option>
+      <ion-option>Abu Dhabi</ion-option>
+      <ion-option>Doha</ion-option>
+      <ion-option>Cairo</ion-option>
+      <ion-option>Alexandria</ion-option>
+      <ion-option>Luxor</ion-option>
+    </ion-select>
+  </ion-navbar>
+  <ion-navbar color="primary">
+    <ion-searchbar placeholder="Search for products, services etc."></ion-searchbar>
+  </ion-navbar>
+  
+
+  
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Home</h2>
 </ion-content>
