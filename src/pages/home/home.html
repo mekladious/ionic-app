@@ -52,19 +52,43 @@
 
     <h6 style= "color: grey"> Featured items </h6>
     <ion-card>
+      <ion-scroll scrollX style="height:50px"> 
       <ion-segment style="width: auto" >
+        <div class="scroll-item">
         <ion-segment-button value="classifieds" style="width:90px;  color:grey">
         Classifieds
         </ion-segment-button>
-        <ion-segment-button value="properties" style="width:90px; color:grey">
-        Properties
-        </ion-segment-button>
-        <ion-segment-button value="preowned" style="width:90px; color:grey">
-        Pre Owned
-        </ion-segment-button>
-        <ion-segment-button value="other" style="width:90px; color:grey">
-        Other
-        </ion-segment-button>
+        </div>
+        <div class="scroll-item">
+          <ion-segment-button value="properties" style="width:90px; color:grey">
+            Properties
+          </ion-segment-button>
+        </div>
+        <div class="scroll-item">
+          <ion-segment-button value="preowned" style="width:90px; color:grey">
+          Pre Owned
+          </ion-segment-button>
+        </div>
+        <div class="scroll-item">
+          <ion-segment-button value="other" style="width:90px; color:grey">
+            Other
+          </ion-segment-button>
+        </div>
       </ion-segment>
+      </ion-scroll>
+      <ion-scroll scrollX style="height:200px;">
+        <div class="scroll-item">
+          Item 1
+        </div>
+        <div class="scroll-item">
+          Item 2
+        </div>
+        <div class="scroll-item">
+          Item 2
+        </div>
+        <div class="scroll-item">
+          Item 2
+        </div>
+      </ion-scroll>
     </ion-card>
 </ion-content>

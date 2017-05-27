@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { NotificationsPage } from '../pages/notifications/notifications'
 import { SettingsPage } from '../pages/settings/settings';
 import { TestPage } from '../pages/test/test'
+import { ClassifiedsPage } from '../components/classifieds/classifieds';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyAccountPage,
     MorePage,
     TabsPage,
-    TestPage
+    TestPage,
+    ClassifiedsPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyAccountPage,
     MorePage,
     TabsPage,
-    TestPage
+    TestPage, 
+    ClassifiedsPage
   ],
   providers: [
     StatusBar,
