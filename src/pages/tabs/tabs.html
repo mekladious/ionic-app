@@ -1,7 +1,12 @@
 <ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home" class=act></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Messages" tabBadge="1" tabBadgeStyle="danger"tabIcon="mail" class="tab"></ion-tab>
-  <ion-tab [root]="tab3Root" tabIcon="add-circle" class=act></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="My Account" tabIcon="contact" class=act></ion-tab>
-  <ion-tab [root]="tab5Root" tabTitle="More" tabIcon="list" class=act></ion-tab>
+  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Messages" tabBadge="1" tabBadgeStyle="danger"tabIcon="mail"></ion-tab>
+  <ion-tab [root]="tab3Root" ></ion-tab>
+  <ion-fab bottom center>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-tab [root]="tab4Root" tabTitle="My Account" tabIcon="contact"></ion-tab>
+  <ion-tab [root]="tab5Root" tabTitle="More" tabIcon="list"></ion-tab>
 </ion-tabs>

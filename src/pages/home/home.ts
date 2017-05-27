@@ -13,8 +13,8 @@ export class HomePage {
   tab2root = TestPage;
   tab3root = TestPage;
 
+  active: string = "classifieds";
   constructor(public navCtrl: NavController) {
-
   }
 
 }

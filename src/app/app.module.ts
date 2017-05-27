@@ -11,11 +11,11 @@ import { MorePage } from '../pages/more/more';
 import { TabsPage } from '../pages/tabs/tabs';
 import { NotificationsPage } from '../pages/notifications/notifications'
 import { SettingsPage } from '../pages/settings/settings';
-import { TestPage } from '../pages/test/test'
-import { ClassifiedsPage } from '../components/classifieds/classifieds';
+import { TestPage } from '../pages/test/test';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Ionic2RatingModule } from 'ionic2-rating';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyAccountPage,
     MorePage,
     TabsPage,
-    TestPage,
-    ClassifiedsPage
+    TestPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    Ionic2RatingModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,8 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyAccountPage,
     MorePage,
     TabsPage,
-    TestPage, 
-    ClassifiedsPage
+    TestPage
   ],
   providers: [
     StatusBar,
